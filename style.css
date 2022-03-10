@@ -1,0 +1,116 @@
+:root{
+    --background:linear-gradient(315deg,#ffffff 0%,#d7e1ec 74%);
+    --background-button:#ffffff;
+    --shadow:rgba(0,0,0,0.1);
+    --facebook:#1f2dec;
+    --twitter:#0084ff;
+    --whatsapp:#28ec32;
+    --github:#383636;
+    --youtube:#f70808;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: var(--background);
+}
+
+.wrapper .button{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background-color: var(--background-button);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px var(--shadow);
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper .button:hover{
+    width: 200px;
+
+}
+
+.wrapper .button .icon{
+display: inline-block;
+width: 60px;
+height: 60px;
+text-align: center;
+border-radius: 50px;
+box-sizing: border-box;
+line-height: 60px;
+transition: all 0.3s ease-in-out;
+}
+
+.wrapper .button .icon i{
+font-size: 25px;
+line-height: 60px;
+}
+
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+background-color: var(--facebook);
+color: var(--background-button);
+}
+
+.wrapper .button:nth-child(2):hover .icon{
+    background-color: var(--twitter);
+    color: var(--background-button);
+}
+
+.wrapper .button:nth-child(3):hover .icon{
+    background-color: var(--whatsapp);
+    color: var(--background-button);
+}
+
+.wrapper .button:nth-child(4):hover .icon{
+    background-color: var(--github);
+    color: var(--background-button);
+}
+
+.wrapper .button:nth-child(5):hover .icon{
+    background-color: var(--youtube);
+    color: var(--background-button);
+}
+
+.wrapper .button:nth-child(1) span{
+    color: var(--facebook);
+    
+}
+    
+ .wrapper .button:nth-child(2) span{
+    color: var(--twitter);
+        
+}
+    
+.wrapper .button:nth-child(3) span{
+    color: var(--whatsapp);
+        
+}
+    
+ .wrapper .button:nth-child(4) span{
+    color: var(--github);
+        
+ }
+    
+.wrapper .button:nth-child(5) span{
+     color: var(--youtube);
+        
+ }
